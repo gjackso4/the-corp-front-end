@@ -1,0 +1,12 @@
+.masthead {
+  max-width: 1200px;
+  margin: 9vw auto 17.5vw;
+  width: 63vw;
+
+  @include xs {
+    margin: 5vw auto 17.5vw;
+  }
+  @include lg {
+    margin: 9vw auto 17.5vw;
+  }
+}

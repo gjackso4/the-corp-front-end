@@ -1,0 +1,50 @@
+.navbar-primary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.639093137254902) 100%);
+
+  @include xs {
+    padding: .5rem 1rem;
+  }
+  @include lg {
+    padding: 1rem 4rem;
+  }
+
+  &--logo {
+    width: 5.25vw;
+    min-width: 75px;
+
+    @include xs {
+      max-width: 75px;
+    }
+    @include lg {
+      max-width: 100px;
+    }
+  }
+
+  &--links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+
+    @include xs {
+      font-size: .850rem
+    }
+    @include lg {
+      font-size: 1rem;
+    }
+
+    a {
+      color: #fff;
+      font-weight: 800;
+      padding: 0 1rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
